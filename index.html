@@ -20,7 +20,7 @@
   <meta name="author" content="Mahfuzur Rahman"/>
   <meta name="keywords" content="B2B cold email, cold email specialist, lead generation, email outreach, appointment setting, Instantly.ai, email deliverability"/>
   <link rel="canonical" href="https://mahfuzur-rahman-2.github.io/"/>
-  <meta name="theme-color" content="#060e17"/>
+  <meta name="theme-color" content="#0B0F19"/>
 
   <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
   <meta property="og:type" content="website"/>
@@ -351,8 +351,8 @@
           </ul>
           <div class="chips">
             <span class="chip"><span class="ci" style="background:#6a5cff">in</span>Instantly.ai</span>
-            <span class="chip"><span class="ci" style="background:#1a91da">⌘</span>DNS</span>
-            <span class="chip"><span class="ci" style="background:#ff7a1a">🔥</span>Warm-up</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">⌘</span>DNS</span>
+            <span class="chip"><span class="ci" style="background:#D97706">🔥</span>Warm-up</span>
           </div>
         </div>
       </div>
@@ -386,9 +386,9 @@
             <li>Reply-focused, conversational copy</li>
           </ul>
           <div class="chips">
-            <span class="chip"><span class="ci" style="background:#1a91da">✎</span>Copywriting</span>
-            <span class="chip"><span class="ci" style="background:#a855f7">AB</span>A/B Testing</span>
-            <span class="chip"><span class="ci" style="background:#1a91da">↻</span>Follow-ups</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">✎</span>Copywriting</span>
+            <span class="chip"><span class="ci" style="background:#475569">AB</span>A/B Testing</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">↻</span>Follow-ups</span>
           </div>
         </div>
       </div>
@@ -405,8 +405,8 @@
           </ul>
           <div class="chips">
             <span class="chip"><span class="ci" style="background:#10b981">✓</span>Deliverability</span>
-            <span class="chip"><span class="ci" style="background:#1a91da">📊</span>Monitoring</span>
-            <span class="chip"><span class="ci" style="background:#f5b301">★</span>Reputation</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">📊</span>Monitoring</span>
+            <span class="chip"><span class="ci" style="background:#D97706">★</span>Reputation</span>
           </div>
         </div>
       </div>
@@ -422,9 +422,9 @@
             <li>A/B insights that feed the next round</li>
           </ul>
           <div class="chips">
-            <span class="chip"><span class="ci" style="background:#1a91da">📊</span>Analytics</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">📊</span>Analytics</span>
             <span class="chip"><span class="ci" style="background:#10b981">✓</span>Deliverability</span>
-            <span class="chip"><span class="ci" style="background:#a855f7">AB</span>Optimization</span>
+            <span class="chip"><span class="ci" style="background:#475569">AB</span>Optimization</span>
           </div>
         </div>
       </div>
@@ -441,8 +441,8 @@
           </ul>
           <div class="chips">
             <span class="chip"><span class="ci" style="background:#0f9d58">G</span>Google Sheets</span>
-            <span class="chip"><span class="ci" style="background:#1a91da">↻</span>Automation</span>
-            <span class="chip"><span class="ci" style="background:#f5b301">★</span>Reporting</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">↻</span>Automation</span>
+            <span class="chip"><span class="ci" style="background:#D97706">★</span>Reporting</span>
           </div>
         </div>
       </div>
@@ -459,8 +459,8 @@
           </ul>
           <div class="chips">
             <span class="chip"><span class="ci" style="background:#0a66c2">in</span>LinkedIn</span>
-            <span class="chip"><span class="ci" style="background:#1a91da">📅</span>Appointments</span>
-            <span class="chip"><span class="ci" style="background:#a855f7">↻</span>Multichannel</span>
+            <span class="chip"><span class="ci" style="background:#9F1239">📅</span>Appointments</span>
+            <span class="chip"><span class="ci" style="background:#475569">↻</span>Multichannel</span>
           </div>
         </div>
       </div>
@@ -1008,7 +1008,7 @@
       if (window.scrollY >= s.offsetTop - 90) current = s.getAttribute('id');
     });
     navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + current ? '#1a91da' : '';
+      a.style.color = a.getAttribute('href') === '#' + current ? '#FB7185' : '';
     });
     // reflect the current section in the URL — without jumping or flooding history
     if (current && current !== lastSection) {
@@ -1191,12 +1191,12 @@
       for (const p of pts) {
         p.x += p.vx; p.y += p.vy;
         if (p.x < 0 || p.x > W) p.vx *= -1; if (p.y < 0 || p.y > H) p.vy *= -1;
-        ctx.beginPath(); ctx.arc(p.x, p.y, 1.6, 0, 7); ctx.fillStyle = 'rgba(82,182,240,0.7)'; ctx.fill();
+        ctx.beginPath(); ctx.arc(p.x, p.y, 1.6, 0, 7); ctx.fillStyle = 'rgba(251,113,133,0.55)'; ctx.fill();
       }
       for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
         const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y, d = dx * dx + dy * dy;
         if (d < 12000) { ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
-          ctx.strokeStyle = 'rgba(26,145,218,' + (0.14 * (1 - d / 12000)) + ')'; ctx.lineWidth = 1; ctx.stroke(); }
+          ctx.strokeStyle = 'rgba(159,18,57,' + (0.2 * (1 - d / 12000)) + ')'; ctx.lineWidth = 1; ctx.stroke(); }
       }
       requestAnimationFrame(frame);
     }
