@@ -119,6 +119,26 @@ nav {
   .hero-photo { width: min(80%, 320px); margin: 0 auto; }
   .hero-desc { max-width: 500px; margin-left: auto; margin-right: auto; }
 }
+/* Mobile: photo first, compact so photo + name + CTA fit in first screen */
+@media (max-width: 600px) {
+  .hero { min-height: auto; padding: 84px 5% 40px; gap: 14px; }
+  .hero-right { order: -1; height: auto; }
+  .hero-photo {
+    width: 140px; margin: 0 auto; border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+  .hero-photo img { object-fit: cover; object-position: center top; }
+  .hero-greeting { font-size: 0.95rem; margin-bottom: 2px; }
+  .hero h1 { font-size: clamp(1.9rem, 9vw, 2.4rem); white-space: nowrap; margin-bottom: 8px; }
+  .hero-title {
+    font-size: clamp(0.8rem, 4.2vw, 1.05rem); white-space: nowrap;
+    letter-spacing: 0; margin-bottom: 12px;
+  }
+  .hero-desc { font-size: 0.9rem; line-height: 1.6; max-width: 100%; margin-bottom: 16px; }
+  .hero-result-badge { font-size: 0.82rem; padding: 8px 16px; margin-bottom: 16px; }
+  .hero-buttons { flex-wrap: nowrap; gap: 10px; margin-bottom: 0; }
+  .hero-buttons .btn { flex: 1; justify-content: center; padding: 12px 10px; font-size: 0.88rem; white-space: nowrap; }
+}
 .btn {
   padding: 13px 30px; border-radius: 8px; font-weight: 600;
   font-size: 0.95rem; cursor: pointer; transition: all 0.25s;
